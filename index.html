@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p>Register for</p>
+        <h1>Full Stack Conference</h1>
+    </header>
+    <form action="index.html" method="POST">
+
+        <div id="first">
+            <p id="required">*-requried field</p>
+            <div id="first_second_fieldset">
+                <fieldset id="first_fieldset">
+                    <legend><span>Basic Info</span></legend>
+                    <label for="name">Name:*</label>
+                    <input type="text" id="name" name="user_name">
+                    <label for="mail">Email Addres:*</label>
+                    <input type="text" id="mail" name="user_email">
+                    <label for="job_rol">Job Role</label>
+                    <select name="user_job" id="job_rol" placeholder="Select Job Role">
+                <option value="jobRol" hidden>Select Job Role</option>
+                <option value="javascriptDeveloper">Full Stack JavaScript Developer</option>
+                <option value="frontEnd">Front End Developer</option>
+                <option value="backEnd">Back End Developer</option>
+                <option value="designer">Designer</option>
+                <option value="student">Student</option>
+                <option value="Other">Other</option>
+            </select>
+                    <input type="text" id="otherJob" name="user_other_job" placeholder="Other job role?">
+                </fieldset>
+                <fieldset id="second_fieldset">
+                    <legend><span>T-Shirt Info</span></legend>
+                    <div id="design_size">
+                        <div id="div_size">
+                            <label for="size" id="size">Size:</label>
+                            <select name="user_size" id="size">
+                <option value="M">M</option>
+                <option value="S">S</option>
+                <option value="XL">XL</option>
+                <option value="XS">XS</option>
+           
+            </select>
+                        </div>
+                        <div id="div_design">
+                            <label for="design" id="design">Design:</label>
+                            <select name="user_design" id="design">
+                <option value="select" hidden>Select Theme</option>
+                <option value="retro">Retro</option>
+                <option value="rock">Rock</option>
+                <option value="childred">Children</option>
+            </select>
+                        </div>
+                    </div>
+                    <label for="color" id="culoare">Color:</label>
+                    <select name="user_color" id="color">
+                    <option hidden>Select a design theme above</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Black">Black</option>
+                </select>
+                </fieldset>
+            </div>
+        </div>
+        <fieldset id="register">
+            <legend><span>Register for Activities*</span></legend>
+            <div id="container">
+                <div>
+                    <div id="container_js">
+                        <input type="checkbox" id="js">
+                        <label for="js">Main Conference</label>
+                    </div>
+                    <img src="svg/javascript-logo-svgrepo-com.svg" id="svg_js">
+                </div>
+                <p>$200</p>
+            </div>
+            <div id="second">
+                <div id="container">
+                    <div>
+                        <div id="container_libraries">
+                            <input type="checkbox" id="js_libraries">
+                            <label for="js_libraries">JavaScript Libraries</label>
+
+                        </div>
+                        <img src="svg/icons8-react-native.svg" alt="" id="svg_libraries">
+                    </div>
+                    <div id="text">
+                        <p id="date">Tuesday 9am-12pm</p>
+                        <p>$100</p>
+                    </div>
+
+                </div>
+                <div id="container">
+                    <div>
+                        <div id="container_node">
+                            <input type="checkbox" id="node">
+                            <label for="node">Node.js Workshop</label>
+
+                        </div>
+                        <img src="svg/nodejs-icon.svg" alt="" id="svg_node">
+                    </div>
+                    <div id="text">
+                        <p id="date">Tuesday 1pm-4pm</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+                <div id="container">
+                    <div>
+                        <div id="container_angular">
+                            <input type="checkbox" id="angular">
+                            <label for="angular">JavaScript Frameworks Workshop</label>
+
+                        </div>
+                        <img src="svg/angular-icon-1.svg" alt="" id="svg_angular">
+                    </div>
+                    <div id="text">
+                        <p id="date"> Tuesday 9am-12pm</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+                <div id="container">
+                    <div>
+                        <div id="container_build">
+                            <input type="checkbox" id="build">
+                            <label for="build">Build tools Workshop</label>
+                        </div>
+                        <img src="svg/tools.svg" alt="" id="svg_build">
+                    </div>
+                    <div id="text">
+                        <p id="date">Tuesday 1pm-4pm</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+                <div id="container">
+                    <div>
+                        <div id="container_npm">
+                            <input type="checkbox" id="npm">
+                            <label for="npm">npm Workshop</label>
+
+                        </div>
+                        <img src="svg/icons8-npm.svg" alt="" id="svg_npm">
+                    </div>
+                    <div id="text">
+                        <p id="date">Wednesday 9am-12pm</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+                <div id="container">
+                    <div>
+                        <div id="container_express">
+                            <input type="checkbox" id="express">
+                            <label for="express">Express Workshop</label>
+
+                        </div>
+                        <img src="svg/expressjs.svg" alt="" id="svg_express">
+                    </div>
+                    <div id="text">
+                        <p id="date">Wednesday 1pm-4pm</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <h1 id="total">Total:$0</h1>
+
+
+        <fieldset id="third_fieldset">
+            <legend><span>Payment Info</span></legend>
+            <div id="third">
+
+
+                <div id="div_payment">
+                    <label for="payment">I'm going to pay with:</label>
+                    <select name="user_payment" id="payment">
+                <option hidden>Select Payment Method</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Card">Card</option>
+            </select>
+                </div>
+                <div id="div_expiration">
+                    <label for="expiration">Expiration Date:</label>
+                    <select name="user_expirationDate" id="expiration">
+                <option hidden>Select Date</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+                </div>
+                <div id="div_year">
+                    <label for="year">Expiration Year:</label>
+                    <select name="user_year" id="year">
+                <option hidden>Select Year</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+                </div>
+                <div id=div_card>
+                    <label for="cardNumber">Card Number:*</label>
+                    <input type="tel" id="cardNumber">
+                </div>
+                <div id="div_zip_cvv">
+                    <div id="div_zip">
+                        <label for="zip">Zip Code:*</label>
+                        <input type="tel" id="zip">
+                    </div>
+                    <div id="div_cvv">
+                        <label for="cvv">CVV:*</label>
+                        <input type="tel" id="cvv">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </fieldset>
+        <div id="Paypal">
+            <h1>PayPal</h1>
+            <p>If you select the PayPal option we'll take you to Paypal's site to set up your billing information when you click "Register" below.</p>
+        </div>
+        <div id="Bitcoin">
+            <h1>Bitcoin</h1>
+            <p>If you select the Bitcoin option we'll take you to the Coinbase site to set up your billing information.Due to nature of exchangin Bitcoin,all Bitcoin transaction will be final.</p>
+        </div>
+        <div id="button">
+            <button>Register</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
